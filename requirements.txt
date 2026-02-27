@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+anthropic
+voyageai
+chromadb
+python-dotenv
