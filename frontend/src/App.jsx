@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>FastAPI RAG Q&A</h1>
+      <h1>FastAPI Q&A</h1>
       <p className="subtitle">Ask questions about FastAPI documentation</p>
 
       <form onSubmit={handleSubmit}>
@@ -56,7 +56,7 @@ function App() {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          placeholder="How do I create a FastAPI route?"
+          placeholder="Search..."
           disabled={loading}
           autoFocus
         />
