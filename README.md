@@ -1,10 +1,6 @@
 # FastAPI RAG Q&A System
 
-This project is a Retrieval-Augmented Generation (RAG) AI question-answering system built with production-style backend architecture.
-
-The application allows users to ask questions about documentation and receive AI-generated answers grounded in retrieved knowledge rather than model hallucinations.
-
-The system combines semantic search with large language models using Anthropic Claude and embedding-based retrieval powered by Voyage AI.
+The application allows users to ask questions about FastAPI documentation and receive answers using generative AI. The system combines semantic search with large language models using Anthropic Claude and embedding-based retrieval powered by Voyage AI.
 
 
 https://github.com/user-attachments/assets/7c8d5f7c-fc89-417d-9af1-db0ad4f79f16
@@ -64,14 +60,13 @@ Semantic similarity is computed using cosine distance.
 ### 3. Streaming AI Responses
 The API supports real-time token streaming using server-sent response chunks, improving perceived latency and user experience.
 
-### 4. Production-Style Prompt Engineering
+### 4. Prompt Engineering
 The system enforces response quality by:
 - Providing explicit system-level instructions
 - Restricting hallucinated knowledge
 - Requiring answers to be based on retrieved documentation
 
 ## Ingestion Pipeline
-The ingestion system:
 - Clones documentation sources
 - Splits text into ~500-token chunks with overlap
 - Generates embeddings in batches
